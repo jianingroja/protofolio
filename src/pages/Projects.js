@@ -1,6 +1,5 @@
 import Sort from "../components/Sort";
 import Project from "../components/Project";
-import { Image, Page, Info } from "../style/style";
 import { useEffect, useState } from "react";
 import data from "../data";
 import styled from "styled-components";
@@ -17,7 +16,8 @@ const Projects = () => {
   const [type, setType] = useState("");
   console.log(type);
 
-  const handleSort = (type) => {
+  const handleSort = (type, e) => {
+    e.preventDefault();
     setType(type);
     console.log("hi");
 
@@ -26,7 +26,8 @@ const Projects = () => {
     setProjects(newProjects);
   };
 
-  const handleAll = () => {
+  const handleAll = (e) => {
+    e.preventDefault();
     setProjects(projectData);
   };
 

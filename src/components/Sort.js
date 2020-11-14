@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import styled from "styled-components";
 
 const Sort = ({ handleSort, handleAll }) => {
@@ -6,22 +5,22 @@ const Sort = ({ handleSort, handleAll }) => {
     <StyledSort>
       <ul>
         <li>
-          <a onClick={() => handleAll()} href="#">
+          <a onClick={(e) => handleAll(e)} href="#">
             All
           </a>
         </li>
         <li>
-          <a onClick={() => handleSort("html/css")} href="#">
+          <a onClick={(e) => handleSort("html/css", e)} href="#">
             Html/Css
           </a>
         </li>
         <li>
-          <a onClick={() => handleSort("javascript")} href="#">
+          <a onClick={(e) => handleSort("javascript", e)} href="#">
             JavaScript
           </a>
         </li>
         <li>
-          <a onClick={() => handleSort("react")} href="#">
+          <a onClick={(e) => handleSort("react", e)} href="#">
             React
           </a>
         </li>
