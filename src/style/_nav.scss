@@ -1,12 +1,16 @@
 //partial
 nav {
+  width: 100%;
   min-height: 10vh;
-  background-color: rgb(6, 96, 126);
+  background-color: rgba(83, 115, 126, 0.692);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: auto;
   padding: 1rem 6rem 1rem 3rem;
+  @media screen and (max-width: 414px) {
+    padding: 1rem;
+  }
   ul {
     display: flex;
     justify-content: space-around;
@@ -15,19 +19,30 @@ nav {
   }
   li {
     padding-left: 6rem;
+    margin: 0;
     cursor: pointer;
+    @media screen and (max-width: 414px) {
+      padding-left: 1rem;
+    }
   }
   a {
     // font-family: "Noto Serif SC", serif;
     text-decoration: none;
-    color: rosybrown;
-    font-size: 1.1rem;
+    display: block;
+    color: rgba(241, 221, 221, 0.774);
+    font-size: 1.2rem;
+    @media screen and (max-width: 414px) {
+      font-size: 1rem;
+    }
   }
   #name {
     font-size: 1.5rem;
-    color: lightblue;
-    span {
-      font-weight: lighter;
+    width: 5rem;
+    color: rgb(215, 235, 241);
+
+    @media screen and (max-width: 414px) {
+      font-size: 1rem;
+      width: 3rem;
     }
   }
 }

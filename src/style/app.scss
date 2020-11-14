@@ -10,13 +10,31 @@
 // font-family: 'Noto Serif SC', serif;
 
 body {
+  font-family: "Roboto", sans-serif;
+  line-height: 150%;
+  background-color: rgba(245, 247, 212, 0.658);
+  @media screen and (max-width: 414px) {
+    font-size: 85%;
+  }
 }
 
 h2 {
-  //   font-family: "Noto Serif SC", serif;
+  font-family: "Noto Serif SC", serif;
+  color: #4d4d4d;
+}
+h3 {
+  // font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+  color: #4a4a4b;
+}
+p,
+li {
+  color: #5c5c5c;
+  margin-bottom: 0.8rem;
 }
 
 //english
 span {
-  font-family: "Inter", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: light;
 }

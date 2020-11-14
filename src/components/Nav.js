@@ -5,7 +5,7 @@ const Nav = () => {
     <nav>
       <h2>
         <Link id="name" to="/">
-          王佳宁 <span>Mica</span>
+          王佳宁
         </Link>
       </h2>
       <ul>
