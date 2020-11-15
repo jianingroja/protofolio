@@ -1,16 +1,16 @@
 import styled from "styled-components";
-import Resumelihoto3 from "../images/1.JPG";
-import Resumelihoto2 from "../images/3.JPG";
-import Resumelihoto1 from "../images/4.jpg";
+import Resumephoto3 from "../images/1.JPG";
+import Resumephoto2 from "../images/3.JPG";
+import Resumephoto1 from "../images/4.jpg";
 import { Image, Page, Info } from "../style/style";
 
 const Resume = () => {
   return (
     <Page>
       <Image>
-        <img src={Resumelihoto1} alt="" />
-        <img src={Resumelihoto2} alt="" />
-        <img src={Resumelihoto3} alt="" />
+        <img src={Resumephoto1} alt="" />
+        <img src={Resumephoto2} alt="" />
+        <img src={Resumephoto3} alt="" />
       </Image>
       <Info>
         <div className="resume-detail">
@@ -35,7 +35,7 @@ const Resume = () => {
             <h2>技能总结</h2>
             <ul>
               <li>系统掌握 HTML / CSS / JavaScript等前端Web开发技术</li>
-              <li>对ES6+ / TylieScript / HTTP协议 / RESTful API有良好理解</li>
+              <li>对ES6+ / TypeScript / HTTP协议 / RESTful API有良好理解</li>
               <li>熟悉 React 开发框架，理解组件化思维</li>
               <li>
                 对 node.js / Express / Mongodb 及 Postman测试工具有一定了解
@@ -144,9 +144,17 @@ const InfoDetail = styled.div`
   }
   display: flex;
   flex-direction: column;
-  justify-content: sliace-between;
+  justify-content: space-between;
   li {
+    /* list-style: square inside rosybrown; */
     list-style: none;
+    margin-left: 5px;
+    ::before {
+      content: "❍ ";
+      font-size: 6px;
+      color: #999797;
+      margin-right: 5px;
+    }
   }
   @media screen and (max-width: 414px) {
     padding: 0.5rem 0rem;
