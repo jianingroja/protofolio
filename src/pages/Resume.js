@@ -43,7 +43,9 @@ const Resume = () => {
                 对 node.js / Express / Mongodb 及 Postman
                 测试工具有一定了解，正在进一步学习
               </li>
-              <li>正在学习 Normalizr、Postcss、Styled-jsx 和 Jest</li>
+              <li>
+                正在学习 Normalizr、Postcss、Styled-jsx、Jest和 Webpack 打包工具
+              </li>
             </ul>
           </InfoDetail>
           <InfoDetail>
